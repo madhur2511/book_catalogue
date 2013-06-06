@@ -1,0 +1,26 @@
+require.config({
+  paths: {
+    jquery: 'libs/jquery.min',
+    underscore: 'libs/underscore-min',
+    backbone: 'libs/backbone',  
+    models: 'models/model',
+    collections:'collections/collection',
+    views:'views/view'
+  },
+  shim: {						
+    underscore: {
+      exports: "_"
+    },
+    backbone: {
+      deps: ['underscore', 'jquery'],
+      exports: 'Backbone'
+    }
+  }
+});
+
+require(['views/app'], function(AppView) {
+  App = new AppView;
+});
+
+
+

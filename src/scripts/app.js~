@@ -1,0 +1,15 @@
+define(['backbone','views','models'], function(Backbone,BookView,Book) {
+  var PageView = Backbone.View.extend({
+
+    initialize:function(){
+				this.list = $("#div");
+				//catalogue.forEach(function(book){
+				var book = new Book();
+				var bookview = new BookView({model:book});
+				alert(bookview.render().el);
+			    this.list.append(bookview.render().el);
+			}
+
+  });
+  return PageView;
+});

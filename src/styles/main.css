@@ -1,0 +1,26 @@
+
+body{
+	text-align:center;
+	//background-color:grey;
+}
+div#div{
+	padding-left:38px;
+	text-align:center;
+
+}
+p.book{
+	padding-left:200px;
+	padding-right:200px;
+	//border:1px solid black;
+	position:relative;
+	float:left;
+}
+div #img{
+	position:relative;
+	top:24px;
+	float:left;
+}
+div #det{
+	position:absolute;
+	left:300px;
+}
