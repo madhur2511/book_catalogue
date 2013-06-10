@@ -1,4 +1,4 @@
-define(["backbone",'../models/model'],function(Backbone,Book){
+define(["backbone","models"],function(Backbone,Book){
 
 	var BookSet =Backbone.Collection.extend({
 

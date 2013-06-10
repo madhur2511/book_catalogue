@@ -62,3 +62,44 @@
 
 
 
+			//App.Catalog 
+/*
+			 this.catalog = new Catalog([
+		      new Book({name : "A",author : "A Bc",description : "abc",category : "abc" ,comments:[],url:"/home/madhur/Desktop/Artoo/assets/A.png"}),
+		      new Book({name : "B",author : "D Ef",description : "def",category : "def" ,comments:[],url:"/home/madhur/Desktop/Artoo/assets/B.jpg"}),
+		      new Book({name : "C",author : "G Hi",description : "ghi",category : "ghi" ,comments:[],url:"/home/madhur/Desktop/Artoo/assets/C.png"}),
+		      new Book({name : "D",author : "J Kl",description : "jkl",category : "jkl" ,comments:[],url:"/home/madhur/Desktop/Artoo/assets/D.jpg"}),
+		      new Book({name : "E",author : "M No",description : "mno",category : "mno" ,comments:[],url:"/home/madhur/Desktop/Artoo/assets/E.png"}),
+		      new Book({name : "F",author : "P Qr",description : "pqr",category : "pqr" ,comments:[],url:"/home/madhur/Desktop/Artoo/assets/F.jpg"})
+		      ]);
+
+
+			this.App = new AppView();
+			// render AppView
+		},
+
+		showonly:function(id){
+
+		 //App.AppView.clearContainer();
+
+	     catalog.length;++i){
+	        if(this.catalog.at(i).get('name') === id) {
+	        	model = this.catalog.at(i);
+	        	break; 
+	        }
+	      }
+
+
+	      //self.singview = new SingularView({model:model});
+
+	      App.AppView.append(new BookView({model: ...}));
+	    },
+
+		index:function(){
+		
+			//App.AppView.clearContainer();
+      		//self.catalogview = new CatalogView({collection : this.catalog});
+
+      		App.AppView.append(new CatalogView({collection:App.Data})
+		}
+*/

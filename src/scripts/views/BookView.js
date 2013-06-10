@@ -2,21 +2,18 @@ define(["backbone"],function(Backbone){
 
 	var BookView = Backbone.View.extend({
 
-		tagName:'p',
+		tagName:'div',
 
-		className:'book',
-
-		events:{
-			"click"   :   "change"
-		},
-
-		change:function(event){
-			router.navigate("books/"+this.model.get('name'),true);
-		},
+		className:'single_book',
 
 		render:function(){
-		    var src = this.model.get("url");
-		    $(this.el).html('<img src="' + src + '" alt="Book Image Here" height="200" width="200" >  </img>');
+			html  = '<div id="img"> <img src="' + this.model.get("url") + '" alt="Book Image Here" height="200" width="200" >  </img> </div>';
+			html += "<div id='det'> <h2>Name : " + this.model.get('name') + "</h2>";
+			html += "<h3> Author : " + this.model.get('author') + "</h3>";
+			html += "<h3> Category : " + this.model.get('category') + "</h3>";	
+			html += "<h3> Description : " + this.model.get('description') + "</h3> </div>";
+
+		    $(this.el).html(html);
 			return this;
 		}
 	});

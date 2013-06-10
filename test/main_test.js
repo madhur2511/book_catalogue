@@ -1,15 +1,15 @@
 require.config({
   paths: {
-    'jquery'         :   'libs/jquery.min',
-    'underscore'     :   'libs/underscore-min',
-    'backbone'       :   'libs/backbone',  
+    'jquery'         :   '../src/scripts/libs/vendor/jquery.min',
+    'underscore'     :   '../src/scripts/libs/vendor/underscore-min',
+    'backbone'       :   '../src/scripts/libs/vendor/backbone',  
     'models'         :   '../src/scripts/models/model',
     'collections'    :   '../src/scripts/collections/collection',
-    'bookviews'      :   '../src/scripts/views/BookView',
-    'bookdetailview' :   '../src/scripts/views/BookDetailView',
-    'mocha'          :   'libs/mocha/mocha',
-    'chai'           :   'libs/chai/chai'
+    'views'          :   '../src/scripts/views',
+    'mocha'          :   '../src/scripts/libs/vendor/mocha/mocha',
+    'chai'           :   '../src/scripts/libs/vendor/chai/chai'
   },
+
   shim: {						
     underscore: {
       exports: "_"
@@ -27,8 +27,8 @@ require.config({
     chai:{
       exports: 'chai'
     }
-    }
-  });
+  }
+});
  
 require(['require', 'chai', 'mocha', 'jquery'], function(require, chai, mocha){
   
@@ -36,8 +36,10 @@ require(['require', 'chai', 'mocha', 'jquery'], function(require, chai, mocha){
   mocha.setup('bdd'); 
 
   require([
-    //'views/BookView.test.js'
-    'views/BookDetailView.test.js'
+    //'views/bookview.test.js'
+    //'views/appview.test.js'
+    'views/catalogview.test.js'
+    //'views/thumbview.test.js'
     //'models/model.test.js'
     //'collections/collection.test.js'
   ], function(require) {

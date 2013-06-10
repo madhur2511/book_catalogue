@@ -1,9 +1,14 @@
 require.config({
   paths: {
-    jquery: 'libs/jquery.min',
-    underscore: 'libs/underscore-min',
-    backbone: 'libs/backbone'
+    jquery        :   'libs/vendor/jquery.min',
+    underscore    :   'libs/vendor/underscore-min',
+    backbone      :   'libs/vendor/backbone',
+    views         :   'views', 
+    collections   :   'collections/collection', 
+    models        :   'models/model',
+    routers       :   'routers/router'
   },
+
   shim: {						
     underscore: {
       exports: "_"
@@ -15,13 +20,12 @@ require.config({
   }
 });
 
-require(["routers/router","backbone"], function(Router , Backbone){
 
-  router = new Router();
+require(["backbone","routers"],function(Backbone, Router){
 
+  router = new Router(); 
   Backbone.history.start({trigger:true});
 
 });
-
 
 

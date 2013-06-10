@@ -1,26 +1,30 @@
-
 body{
 	text-align:center;
-	//background-color:grey;
-}
-div#div{
-	padding-left:38px;
-	text-align:center;
-
+	background-color:#9E9699;
 }
 p.book{
-	padding-left:200px;
-	padding-right:200px;
-	//border:1px solid black;
+	padding-left:150px;
+	padding-right:150px;
 	position:relative;
 	float:left;
 }
-div #img{
-	position:relative;
-	top:24px;
-	float:left;
+div.single_book{
+	padding-top: 10px;
 }
-div #det{
+div#img{
 	position:absolute;
-	left:300px;
+	float:left;
+	left:12px;
+}
+div#det{
+	position:absolute;
+	left:270px;
+}
+div#outer{
+	width:80%;
+	height:100%;
+	position:relative;
+	left:140px;
+	background-color:#ffffd0;
+	overflow:scroll;
 }
