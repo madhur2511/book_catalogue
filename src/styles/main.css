@@ -1,5 +1,6 @@
 body{
 	text-align:center;
+	padding-top:5px;
 	background-color:#9E9699;
 }
 p.book{
@@ -20,11 +21,13 @@ div#det{
 	position:absolute;
 	left:270px;
 }
-div#outer{
+div#outer{	
 	width:80%;
 	height:100%;
 	position:relative;
 	left:140px;
+	font-size:24px;
+	font-weight: bold;
 	background-color:#ffffd0;
 	overflow:scroll;
 }
