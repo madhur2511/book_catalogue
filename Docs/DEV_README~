@@ -1,1 +1,0 @@
-1. The dependency issue between Backbone and Underscore libraries while using Require.js is solved using "shim" and mentioning the dependencies and   exports for them inside shim.
